@@ -6,3 +6,4 @@ pypdf
 streamlit_authenticator
 pyyaml
 langchain_community
+tiktoken
