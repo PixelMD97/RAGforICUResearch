@@ -1,0 +1,8 @@
+streamlit
+langchain
+openai
+faiss-cpu
+pypdf
+streamlit_authenticator
+pyyaml
+langchain_community
