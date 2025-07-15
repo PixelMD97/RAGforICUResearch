@@ -1,9 +1,9 @@
-streamlit
-langchain
 openai
+langchain
+streamlit
+streamlit-authenticator
 faiss-cpu
 pypdf
-streamlit_authenticator
 pyyaml
 langchain_community
 tiktoken
