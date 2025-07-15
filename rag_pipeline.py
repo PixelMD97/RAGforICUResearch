@@ -3,8 +3,9 @@ from langchain.chains import RetrievalQA
 import os
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
-from langchain_community.llms import OpenAI
+from langchain_community.vectorstores import FAISS 
+from langchain_community.chat_models import ChatOpenAI
+
 
 
 def load_or_build_qa_chain():
@@ -18,8 +19,9 @@ def load_or_build_qa_chain():
     vectorstore = FAISS.from_documents(chunks, OpenAIEmbeddings())
     retriever = vectorstore.as_retriever()
 
+
     return RetrievalQA.from_chain_type(
-        llm=OpenAI(model="gpt-4"),
-        retriever=retriever,
-        return_source_documents=True
-    )
+    llm=ChatOpenAI(model="gpt-4"),
+    retriever=retriever,
+    return_source_documents=True
+)
