@@ -1,0 +1,9 @@
+credentials:
+  usernames:
+    testuser:
+      name: Test User
+      password: '$2b$12$5Xl4MpZ9iOb5DuCqLa1aUu2lgBBwH9CexZmxWhwK3DWCeJbX.Pa5K'  # password = "HelloICUAI!"
+cookie:
+  name: some_cookie_name
+  key: some_signature_key
+  expiry_days: 30
