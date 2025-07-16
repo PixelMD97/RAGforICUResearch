@@ -12,7 +12,7 @@ if "chat_history" not in st.session_state:
 
 # --- Title and intro
 st.markdown(
-    "<h1 style='text-align: center; color: #2c3e50;'>🩺 Clinical Study Chatbot (RAG)</h1>",
+    "<h1 style='text-align: center; color: #2c3e50;'Clinical Study Demo Chatbot (RAG)</h1>",
     unsafe_allow_html=True
 )
 
